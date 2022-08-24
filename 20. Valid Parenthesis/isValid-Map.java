@@ -11,7 +11,7 @@ class Solution {
                 if( map.get(S.peek()) == c ) S.pop();
                 else return false;
                 }
-            }
+            } 
         if (S.isEmpty()) return true;
         return false;
     }
