@@ -1,0 +1,18 @@
+from ast import List
+from tokenize import String
+
+class Solution:
+    def replace(str) -> int:
+        cnt = 0
+        for i in range(len(str)):
+            cnt2 = cnt
+            if str[i:i+2] == "01":
+                str[i:i+2] == "10"
+                cnt = cnt+1
+            if (i == len(str)-1 and cnt == cnt2):
+                return cnt
+            else:
+                i = 0
+
+    print(replace("0101"))
+    
